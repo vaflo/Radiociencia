@@ -1841,6 +1841,35 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+/*NUEVO-JUSTIFICAR*/
+.text-justify p {
+  text-align: justify;
+  text-indent: 1em;
+}
+
+.logo-mini {
+  max-width: 500px; /* Cambia el número si quieres que sea más pequeña o más grande */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-contenedor {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.video-contenedor iframe {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.stats-item .d-flex.align-items-baseline {
+  display: inline-flex;
+}
+
+.porcentaje {
+  font-size: 5em; /* o prueba con 1.3em, 1.5em... */
+  margin-left: 3px; /* opcional, para separarlo un poco del número */
 }

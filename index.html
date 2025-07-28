@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/v_favicon.png" rel="icon">
-  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+  <link href="assets/img/icon.png" rel="icon"> <!--icono de pestaña-->
+  <link href="assets/img/logonombre.png" rel="apple-touch-icon"> <!--icono de descarga-->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,14 +18,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!--sistema de diseño y cuadrícula (estructura responsive)-->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!--iconos especiales-->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"> <!--animaciones al hacer scroll-->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> <!--efectos tipo galería para imágenes-->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> <!--deslizables-->
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">  <!--aqui se modifica todo el estilo-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
   <!-- =======================================================
   * Template Name: Dewi
@@ -44,16 +47,17 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Dewi</h1>
+        <h1 class="sitename">Radiociencia</h1> <!--titulo a la izquierda-->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Agosto 2025</a></li>
+          <!--  <li><a href="#services">Entender el cancer</a></li> -->
+          <li><a href="#services" data-bs-toggle="tooltip" title="Cáncer: un proceso biológico que merece ser entendido.">Entender el cáncer</a></li>
+          <li><a href="#portfolio" data-bs-toggle="tooltip" title="Ni buena ni mala: la radiación necesita contexto.">Radiación y vida</a></li>
+          <li><a href="#team">Equipo</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -71,12 +75,12 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
+      <a class="cta-btn" href="index.html#about">Empecemos</a>
 
     </div>
   </header>
@@ -86,14 +90,14 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/Principal.png" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">ESPERANZA EN LA ADVERSIDAD</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Comprende como la física transforma la medicina, el ambiente y nuestra historia</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          <a href="#about" class="btn-get-started">Empecemos</a>
+          <a href="https://www.youtube.com/watch?v=XdXtDRrmlJA" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver vídeo</span></a>
         </div>
       </div>
 
@@ -105,31 +109,27 @@
       <div class="container">
 
         <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          <div class="col-lg-6 text-justify" data-aos="fade-up" data-aos-delay="100">
+            <h3>Un proyecto con causa y ambición</h3>
+            <img src="assets/img/logonombre.png"class="img-fluid rounded-4 mb-4 logo-mini"  alt="">
+            <p>Este sitio forma parte de la propuesta <strong>“Radiociencia: física con prisa”</strong>, inscrita en la categoría <strong>Gigante de la Innovación</strong> del Premio Estatal de la Juventud Aguascalientes 2025.</p>
+            <p>  <strong>Radiociencia</strong> es una iniciativa individual que nace del deseo de cambiar la manera en que la sociedad entiende la radiación: no como un concepto temido, sino como una herramienta que puede curar, diagnosticar, educar y generar esperanza.</p>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="col-lg-6 text-justify" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
+              <p class="fst-italic">La ciencia debe servir, tocar vidas y educar.</p>
+              <p>Su objetivo es ofrecer información clara y útil a quienes enfrentan procesos como el cáncer. A través de un lenguaje accesible, se busca acompañar a pacientes y familias, responder dudas reales y mostrar cómo la radiación también puede ser parte de la vida, no del miedo.</p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Fusiona física médica, tecnología y divulgación científica</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Tiene una visión social, educativa y transformadora.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Apuesta por una ciencia que acompaña, guía y cuida a las personas.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Brinda herramientas claras a pacientes, familias y sociedad en general, sin tecnicismos vacíos.</span></li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+              <p> Este proyecto se mantiene actualizado con los avances en radioterapia, imagenología y física médica, con el fin de acercar ese conocimiento a quienes más lo necesitan. Al mismo tiempo, integra aportaciones propias sobre investigación, diseño y desarrollo de nuevos materiales, exploración de herramientas y análisis adaptados a las necesidades específicas de la región.</p>
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+              <div class="position-relative mt-4 video-contenedor">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/768170012397477" width="360" height="215" style="border:none;overflow:hidden"       scrolling="no" frameborder="0" allowfullscreen="true">
+                </iframe>
               </div>
             </div>
           </div>
@@ -147,44 +147,52 @@
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
+            <div class="stats-item text-center">
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <i class="bi bi-radioactive fs-1 text-warning"></i>
+                <div class="d-flex align-items-baseline">
+                  <span class="purecounter fs-2 fw-bold" data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="2">0</span><span class="fs-5 fw-bold ms-1 <span class="fw-bold ms-1" style="font-size: 1.9rem !important;">%</span>
+                </div>
               </div>
+              <p>pacientes con cáncer<br>reciben radioterapia</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+            <div class="stats-item text-center">
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <i class="bi bi-exclamation-triangle color-blue flex-shrink-0"></i>
+                <div class="d-flex align-items-baseline">
+                  <span class="purecounter fs-2 fw-bold" data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="2">0</span><span class="fs-5 fw-bold ms-1 <span class="fw-bold ms-1" style="font-size: 1.9rem !important;">%</span>
+                </div>
               </div>
+              <p>abandonan el tratamiento<br>por desinformación</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
+            <div class="stats-item text-center">
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <i class="bi bi-building-fill-x"></i>
+                <div class="d-flex align-items-baseline">
+                  <span class="purecounter fs-2 fw-bold" data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="2">0</span><span class="fs-5 fw-bold ms-1 <span class="fw-bold ms-1" style="font-size: 1.9rem !important;">%</span>
+                </div>
               </div>
+              <p>de la población no cuenta con<br>diagnostico temprano</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+            <div class="stats-item text-center">
+              <div class="d-flex justify-content-center align-items-center mb-2">
+                <i class="bi bi-people-fill"></i>
+                <div class="d-flex align-items-baseline">
+                  <span class="purecounter fs-2 fw-bold" data-purecounter-start="0" data-purecounter-end="7000000" data-purecounter-duration="2">0</span>
+                </div>
               </div>
+              <p>personas mueren al año por<br>desigualdades, no por el cáncer</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
         </div>
 
@@ -1047,6 +1055,17 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--NUEVO:inicializador de tooltips:al pasar el mouse dice cosas-->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+</script>
+
 
 </body>
 
