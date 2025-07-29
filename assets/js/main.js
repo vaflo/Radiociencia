@@ -165,6 +165,34 @@
     });
 
   });
+ //NUEVO//
+// Esperar al DOM y aplicar filtro por hash
+  const hash = window.location.hash;
+  const filtros = {
+    "#app": ".filter-app",
+    "#product": ".filter-product",
+    "#branding": ".filter-branding",
+    "#books": ".filter-books"
+  };
+
+  const filtro = filtros[hash];
+  if (filtro) {
+    // simula clic en el botón correspondiente (para cambiar clase activa también)
+    const btn = document.querySelector(`#portfolio-flters li[data-filter="${filtro}"]`);
+    if (btn) {
+      btn.click(); // activa visual y funcionalmente
+
+      // ejecuta el filtro en Isotope directamente
+      portfolioIsotope.arrange({ filter: filtro });
+
+      // scroll a la sección
+      setTimeout(() => {
+        document.getElementById("portfolio-section")?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }
+ //FIN//
+
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
@@ -207,3 +235,31 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+//NUEVO
+
+// FUNCIÓN PARA FILTRAR AL CARGAR DESDE UN HASH
+window.addEventListener('load', () => {
+  const hash = window.location.hash;
+
+  const filtros = {
+    "#app": ".filter-app",
+    "#product": ".filter-product",
+    "#branding": ".filter-branding",
+    "#books": ".filter-books"
+  };
+
+  const filtro = filtros[hash];
+  if (filtro) {
+    const btn = document.querySelector(`#portfolio-flters li[data-filter="${filtro}"]`);
+    if (btn) {
+      btn.click();
+      setTimeout(() => {
+        document.getElementById('portfolio-section')?.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  }
+});
+
+
+

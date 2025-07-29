@@ -642,7 +642,7 @@
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div id="vida" class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>La ciencia que trata de eliminar el cancer</p>
       </div><!-- End Section Title -->
@@ -659,16 +659,16 @@
             <li data-filter=".filter-books">Avances personales</li>
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div id="portfolio-section" class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
+                <div class="portfolio-info" class="portfolio-item filter-app show">
                   <h4>Diagnóstico con imágenes.</h4> <!--1-->
                   <p>Usa de rayos X, tomografías y gammagrafías para detectar tumores a tiempo.</p>
-                  <a href="assets/img/portfolio/app1.png"  title="En esta radiografía de tórax se observan múltiples lesiones compatibles con metástasis pulmonares. La radiación, empleada en este tipo de estudios, permite detectar enfermedades a tiempo y salvar vidas. " data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app1.png"  title="En esta radiografía de tórax se observan múltiples lesiones compatibles con metástasis pulmonares. La radiación, empleada en este tipo de estudios, permite detectar enfermedades a tiempo y salvar vidas. " data-gallery="portfolio-gallery-app" id="app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-app1.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -680,7 +680,7 @@
                   <h4>¿Qué es realmente la radiación?</h4> <!-------------------------2-->
                   <p>Qué es la radiación ionizante y por qué no toda radiación es peligrosa.</p>
                   <a href="assets/img/portfolio/product1.png" title="A inicios del siglo XX, la radiación ionizante comenzó a utilizarse en medicina tras el descubrimiento de los rayos X. Su capacidad para atravesar tejidos permitió observar estructuras internas sin necesidad de cirugía." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="portfolio-details2.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -879,87 +879,6 @@
       </div>
 
     </section><!-- /Team Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 ">
-            <div class="row gy-4">
-
-              <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -999,11 +918,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Desarrollo</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html#adv1">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#app">Herramientas médicas</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Radiación y mitos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Ciencia y esperanza</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Avances personales</a></li>
           </ul>
         </div>
 
@@ -1050,6 +968,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
