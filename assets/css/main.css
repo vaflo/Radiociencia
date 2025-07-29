@@ -1873,3 +1873,35 @@ section,
   font-size: 5em; /* o prueba con 1.3em, 1.5em... */
   margin-left: 3px; /* opcional, para separarlo un poco del número */
 }
+
+.contenedor-graficas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.grafica img {
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Aquí personalizas cada imagen */
+#grafica1 {
+  height: 300px;  /* Ajusta según necesites */
+}
+
+#grafica2 {
+  height: 300px;
+}
+
+#grafica3 {
+  height: 299px;  /* Ajusta según necesites */
+}
+
+#grafica4 {
+  height: 300px;
+}
