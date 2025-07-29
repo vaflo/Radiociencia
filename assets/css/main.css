@@ -1905,3 +1905,35 @@ section,
 #grafica4 {
   height: 300px;
 }
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li::before {
+  content: "⧫ ";
+  color: #080a0c;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.fuentes-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin-top: 3px;
+}
+
+.fuentes-flex a {
+  color: #fff; /* o el color de tus enlaces */
+  text-decoration: none;
+  font-weight: 1000;
+}
+
+.fuentes-flex a:hover {
+  text-decoration: underline;
+}
+
+
